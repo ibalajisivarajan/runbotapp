@@ -1,0 +1,61 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <title>Kanban Board</title>  
+  <link rel="stylesheet" href="styles.css" />  
+</head>  
+<body>  
+  <div class="sidebar">  
+    <h2>Kanban Board</h2>  
+    <button id="add-task-btn">Add Task</button>  
+  </div>  
+
+  <div class="header">  
+    <h1>Task Counters</h1>  
+    <div id="task-counters">  
+      <span>To Do: <span id="todo-count">0</span></span>  
+      <span>In Progress: <span id="in-progress-count">0</span></span>  
+      <span>Completed: <span id="completed-count">0</span></span>  
+    </div>  
+  </div>  
+
+  <div class="kanban-board">  
+    <div class="column" id="todo-column">  
+      <h3>To Do</h3>  
+      <ul id="todo-list"></ul>  
+    </div>  
+    <div class="column" id="in-progress-column">  
+      <h3>In Progress</h3>  
+      <ul id="in-progress-list"></ul>  
+    </div>  
+    <div class="column" id="completed-column">  
+      <h3>Completed</h3>  
+      <ul id="completed-list"></ul>  
+    </div>  
+  </div>  
+
+  <div class="modal" id="task-modal">  
+    <form id="task-form">  
+      <input type="text" id="task-input" placeholder="Enter task description" required />  
+      <select id="priority-select">  
+        <option value="high">High</option>  
+        <option value="medium">Medium</option>  
+        <option value="low">Low</option>  
+      </select>  
+      <button type="submit">Add Task</button>  
+    </form>  
+  </div>  
+
+  <script src="app.js"></script>  
+</body>  
+</html>  
+<task_progress>  
+- [ ] Create basic HTML structure with sidebar, header, and Kanban columns  
+- [ ] Add task counters in the header  
+- [ ] Implement modal for adding new tasks  
+- [ ] Link styles.css and app.js in the HTML  
+- [ ] Ensure relative paths are correct for all assets  
+</task_progress>  
+</write_to_file>
